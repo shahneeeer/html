@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucess</title>
+<style>
+    body{
+        background:black;
+    }
+
+    h1{
+        text-align: center;
+    }
+</style>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    let colArray=["red","blue","yellow"];
+    let i=0;
+    $(function(){
+        $("#arc1").css({
+            height:"35px",
+            width:"1320px ",
+            backgroundColor:"green",
+
+        });
+        setInterval(function(){
+            changecolor();
+        },1000);
+
+        function changecolor(){
+            $("#arc1").css({"background-color":colArray[i]});
+            if(i==(colArray.length-1))
+                i=0;
+            else
+                i++
+
+        }
+
+    });
+</script>
+
+</head>
+<body>
+
+    <h1 id="arc1">CONGATULATIONS YOUR PAYMENT IS SUCESSFUL !!!!</h1>
+    <br>
+    <a style="color: red;" href="nav.html">GO TO HOME PAGE</a>
+
+</body>
+</html>    
+    

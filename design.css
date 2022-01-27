@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    background-image: url("images/Hotel.jpg");
+    background-size: cover;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+ ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.nav{
+   width:100%;
+   background: black;
+   height: 60px;
+}
+ li:hover{
+    background:yellow;  
+}
+ ul li{
+     float: left;
+     margin-top:20px;     
+ }
+ a {
+     width: 150px;
+     color:red;
+     display: block;
+     text-decoration: none;
+     text-align: center;  
+ }
+ ul li ul{
+     background:black;
+     display: none;
+ }
+ ul li ul li{
+     float:none;
+ }
+ul li:hover ul{
+    display:block;
+}
+h1,p{
+    color:white;
+    text-align: center;
+}
+p:hover{
+    background:red;
+}
+h1:hover{
+    background: red;
+    
+}
+footer{
+    text-align: center;
+    background:black;
+}
+.p2{
+    color:red;
+}
+
+
+
+
+
+
+
+
+

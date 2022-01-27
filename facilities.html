@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROOMS</title>
+    <style>
+        span{
+            color: red;
+        }
+
+        form{
+            
+            color:rgb(255, 255, 0);
+
+            padding: 20px;
+            
+            
+        }
+        body{
+            background:black;
+            
+            
+        }
+        h1,a{
+            text-align: center;
+            color:red;
+        }
+        body{
+            background-image: url("images/facili.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        h1{
+            background:black;
+        }
+       
+    </style>
+    
+</head>
+<body>
+    
+
+    <h1>BOOK YOUR ROOM IN OUR HOTEL</h1><br>
+    <form action="Sucess.html"  onsubmit="  return validateform()" novalidate>
+
+        <label >Enter Name:</label>
+        <input type="text"  onblur="validate()" id="name" required><br><br><br>
+        <span id="err1"></span><br>
+        <label>MOBILE NO:</label>
+        <input type="tel"  onblur="validation1()" id="inp2" required><br><br><br>
+        <span id="sp1"></span><br>
+        <label>Email:</label>
+        <input type="email"  onblur="validation3()" id="mailid" required><br><br><br>
+        <span id="err3"></span><br>
+        <label>Password:</label>
+        <input type="password"  onblur="validation4()" id="password" required><br><br><br>
+        <span id="err4"></span><br>
+        <label> confirm Password:</label>
+        <input type="password"  onblur="validation5()" id="con_password" required><br><br><br>
+        <span id="err5"></span><br>
+        <label>Show password:</label>
+        
+        <input type="checkbox"  onchange="showpass()" id="showpass1" required><br><br><br><br>
+        <label>RATES</label>
+        <select id="list" onchange="validation6()">
+            <option>CHOOSE AMOUNT</option>
+            <option>1000</option>
+            <option>2000</option>
+            <option>3000</option>
+            <option>4000</option>
+        </select>
+        <span id="err6"></span><br>
+        <br><br>
+        <label>DEBIT CARD NO:</label>
+        <input type="number"  onblur="validation8()" id="card" required><br><br><br>
+        <span id="err9"></span><br>
+        <input type="submit" value="payment">
+    </form><br><hr>
+    <a href="nav.html">GO TO HOME PAGE</a>
+    <script src="facilities.js"></script>
+</body>
+</html>

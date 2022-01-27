@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CONTACT</title>
+    <meta charset="UTF-8">
+    <meta name="description", content="Brief description of web page">
+    <meta name="keywords",content="Important words of web page">
+    <meta name="author", content="Name of Author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+        }
+        .abc{
+            height:300px;
+            width:300px;
+        }
+        ul,a{
+            color:red
+        }
+        ui{
+            text-decoration: none;
+        }
+    </style>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        let colArray=["red","blue","yellow"];
+        let i=0;
+        $(function(){
+            $("#arc").css({
+                height:"35px",
+                width:"1320px ",
+                backgroundColor:"green",
+
+            });
+            setInterval(function(){
+                changecolor();
+            },1000);
+
+            function changecolor(){
+                $("#arc").css({"background-color":colArray[i]});
+                if(i==(colArray.length-1))
+                    i=0;
+                else
+                    i++
+
+            }
+
+        });
+    </script>
+    
+</head>
+<body>
+    <a href="#bottom" id="top">GO TO BOTTOM</a>
+    <h1 id="arc">CONTACT US</h1>
+    <img class="abc"src="images/manager.jpg">
+    <ul>
+        <li>DESIGNATION: MANAGER</li>
+        <li>NAME: XYZ</li>
+        <li>MOBILE NO: 9876543210</li>
+    </ul><br><hr><br>
+    <img class="abc" src="images/Reception.jpg">
+    <ul>
+        <li>DESIGNATION: RECEPTIONIST</li>
+        <li>NAME: ABC</li>
+        <li>MOBILE NO: 9876342210</li>
+    </ul>
+</ul><br><hr><br>
+<img class="abc" src="images/room service.jpg">
+<ul>
+    <li>DESIGNATION: ROOM SERVICE</li>
+    <li>NAME: PQR</li>
+    <li id="bottom">MOBILE NO: 9836542210</li>
+</ul>
+<a href="#top">GO TO TOP</a>
+<br><hr><br>
+<a href="nav.html">GO TO HOME PAGE</a>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEDBACK</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="feedback.js"></script>
+    <style>
+        span{
+            color: red;
+        }
+        body{
+            background-color: black;
+        }
+        form{
+            
+            color:yellow;
+            text-align: center;
+        }
+        img{
+            width:1350px;
+            height:350px;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <form action="sucess.html" id="formm"  novalidate>
+
+        <label >Enter Name :</label>
+        <input type="text"   id="name" required><br>
+        <span id="err1"></span><br>
+        <label>Mobile Number :</label>
+        <input type="tel"   id="inp2" required><br>
+        <span id="sp1"></span><br>
+        <label>Email :</label>
+        <input type="email"   id="mailid" required><br>
+        <span id="err3"></span><br>
+        <label>Feedback :</label>
+        <input type="text"  id="text1" required><br>
+        <span id="err4"></span><br>
+       
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <img src="images/feeback.png">
+    <a style="color:red"  href="nav.html">GO TO HOME PAGE</a>
+    
+    
+    
+    
+</body>
+</html>
